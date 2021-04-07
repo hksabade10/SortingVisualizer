@@ -7,7 +7,7 @@ ArrayElement::ArrayElement(int x, int y, qreal width, qreal height)
     this->x = x+1;
     this->y = y+1;
     this->height = (int)height;
-    rect = QRectF((x)*(5 * width), 0, width, this->height);
+    rect = QRectF((x)*(2 * width), 0, width, this->height);
     rec = rect;
     setHeight(qrand() % this->height);
 }

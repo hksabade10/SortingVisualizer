@@ -23,21 +23,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("Merge Sort");
     ui->comboBox->addItem("Quick Sort");
     ui->comboBox->addItem("Shell Sort");
-    // ui->comboBox->addItem("Bin Sort");
-    // ui->comboBox->addItem("Radix Sort");
 
-
-    N = 300;
+    N = 200;
 
     for(int i = 0; i < N; i++)
     {
-        arr.push_back(new ArrayElement(i, 0, 1, 800));
+        arr.push_back(new ArrayElement(i, 0, 4, 800));
         scene->addItem(arr[i]);
     }
-//    for(int i = 0; i < N; i++)
-//    {
-//        arr[i]->setHeight(qrand() % 800);
-//    }
 }
 
 MainWindow::~MainWindow()
